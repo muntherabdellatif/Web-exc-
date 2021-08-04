@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="description" contant="form in HTML">
+    <Title>form in HTML</Title>
+    <style>
+        body {
+            background-color: rgb(122, 153, 194);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- method could be post or get 
+       *post =>
+        لا تظهر البيانات في عنوان الصفحة في الاعلى بعد ارسالها 
+       *get => 
+        تظهر البيانات في عنوان الصفحة في الاعلى بعد ارسالها
+       *novalidate=> no validate (don't see the errors in form)
+       * target="_blank" =>
+        يفتح صفحة جديدة بعد ارسال البيانات و تبقى البيانات التي ارسلتها في الصفحة القديمة 
+        ( تعمل عند اختيار POST)
+       * multiple=> 
+        تستخدم مع select
+        لاختيار اكثر من خيار واحد 
+       * you can search in ( data list ) but you can't in ( select ) 
+        -->
+        <form action="" method="POST" target="_blank">
+            <input type="hidden">
+            <div>
+                <!-- the mouse start from autofocus input  -->
+                <label> User name </label>
+                <input type="text" required placeholder="User name" name="userName" autofocus>
+            </div>
+            <br>
+            <div>
+                <label> readonly </label>
+                <input type="text" required name="userName" value="read only" readonly>
+            </div>
+            <br>
+            <div>
+                <label for="password"> Password </label>
+                <input type="password" required placeholder="Password" name=Password minlength="10" maxlength="20"
+                    id="password">
+            </div>
+            <br>
+            <div>
+                <label>Email </label>
+                <!-- disabled data not send when submit -->
+                <input type="email" required placeholder="Email" value="monthersaleh@gmail.com" name="Gmail" disabled>
+            </div>
+            <br>
+            <div> language you know : ( radio )</div>
+            <br>
+            <div>
+                <div>
+                    <input type="radio" name="language" value="cpp" checked id="cpp">
+                    <label for="cpp"> C++ </label>
+                </div>
+                <div>
+                    <input type="radio" name="language" value="HTML" id="HTML">
+                    <label for="HTML"> HTML </label>
+                </div>
+                <div>
+                    <input type="radio" name="language" value="JS" id="JS">
+                    <label for="JS"> JS </label>
+                </div>
+            </div>
+            <br>
+            <div> language you know : ( check box )</div>
+            <br>
+            <div>
+                <div>
+                    <input type="checkbox" name="language" value="cpp" checked id="cpp">
+                    <label for="cpp"> C++ </label>
+                </div>
+                <div>
+                    <input type="checkbox" name="language" value="HTML" id="HTML">
+                    <label for="HTML"> HTML </label>
+                </div>
+                <div>
+                    <input type="checkbox" name="language" value="JS" id="JS">
+                    <label for="JS"> JS </label>
+                </div>
+            </div>
+            <div> choose language : ( select )</div>
+            <div>
+                <label for="lang"> language</label>
+                <select name="lang" id="lang">
+                    <optgroup label="low level">
+                        <option value="cpp" selected>C++</option>
+                        <option value="c">C</option>
+                        <option value="java">Java</option>
+                    </optgroup>
+                    <optgroup label="Web">
+                        <option value="js">JS</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="hp">HP</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="programing"> language </label>
+                <input list="programing" name="programing">
+
+                <datalist id="programing">
+                    <option value="C++">
+                    <option value="C#">
+                    <option value="C">
+                    <option value="Java">
+                </datalist>
+            </div>
+            <hr>
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="text"></textarea>
+            <div>
+                <label for="file">file</label>
+                <input type="file" name="file" id="file">
+            </div>
+            <br>
+            <div>
+                <label for="se">search</label>
+                <input type="search" name="se" id="se">
+            </div>
+            <br>
+            <div>
+                <label for="link">link(URL)</label>
+                <input type="URL" id="link" name="link">
+            </div>
+            <br>
+            <div>
+                <label for="date">date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <br>
+            <div>
+                <label for="month">month</label>
+                <input type="month" id="month" name="month">
+            </div>
+            <br>
+            <div>
+                <label for="time">time</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <hr>
+            <div>
+                <label>Country </label>
+                <input type="text" placeholder="Country" name="Country">
+            </div>
+            <br>
+            <div>
+                <label> color </label>
+                <input type="color" name="color">
+            </div>
+            <br>
+            <div>
+                <label> range </label>
+                <input type="range" name="range" min="0" max="100" step="20" value="0">
+            </div>
+            <br>
+            <div>
+                <label> number </label>
+                <input type="number" name="number" min="0" max="100" step="20" value="0">
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="save">
+            </div>
+            <br>
+            <div>
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+    <div>
+        <p>
+            <a href="file:///C:/Users/lion%20heart/Documents/Web/HTML%20test%201/index.HTML" title="go back"> back </a>
+        </p>
+    </div>
+    <div>
+        <p>
+            <a href="file:///C:/Users/lion%20heart/Documents/Web/HTML%20test%201/index.HTML" target="_blank"
+                title="go back with new page">
+                back new bage</a>
+        </p>
+    </div>
+</body>
+
+</html>
