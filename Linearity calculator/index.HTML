@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="description" content="linearity test calculator">
+    <title>linearity test calculator</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <h1>linearity test calculator by Munther Abdellatif </h1>
+    <form action="">
+        <table>
+            <caption>
+                Input data
+            </caption>
+            <thead>
+                <tr>
+                    <th>Concentration </th>
+                    <th>Absorbance </th>
+                    <th>Calcolated error</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td aria-readonly="true"> C1 </td>
+                    <td> <input type="number" required name="a1" placeholder="C1"> </td>
+                    <td> <input type="number" readonly name="error1" placeholder="C1 error"></td>
+                </tr>
+                <tr>
+                    <td aria-readonly="true"> C2</td>
+                    <td> <input type="number" required name="a2" placeholder="C2"> </td>
+                    <td> <input type="number" readonly name="error2" placeholder="C2 error"></td>
+                </tr>
+                <tr>
+                    <td aria-readonly="true"> C3</td>
+                    <td> <input type="number" required name="a3" placeholder="C3"> </td>
+                    <td> <input type="number" readonly name="error3" placeholder="C3 error"></td>
+                </tr>
+                <tr>
+                    <td aria-readonly="true">C4 </td>
+                    <td> <input type="number" required name="a4" placeholder="C4"> </td>
+                    <td> <input type="number" readonly name="error4" placeholder="C4 error"></td>
+                </tr>
+                <tr>
+                    <td aria-readonly="true">C5 </td>
+                    <td> <input type="number" required name="a5" placeholder="C5"> </td>
+                    <td> <input type="number" readonly name="error5" placeholder="C5 error"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"> Normal:(C1,C2,C3,C4,C5)=(10,15,20,25,30)</td>
+                </tr>
+                <tr>
+                    <td colspan="3">semi-micro:(C1,C2,C3,C4,C5)=(20,30,40,50,60)</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <input type="button" name="calc" value="Calc" onclick="Calc(Finput,Foutput)">
+</body>
+
+</html>

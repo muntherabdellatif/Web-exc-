@@ -1,0 +1,37 @@
+.text {
+    background-color: cadetblue;
+    padding: 10px 10px ;
+    width: 70%;
+    /* auto make your element in the med */
+    margin: auto ;
+}
+.text-area{
+    background-image: url("../img/5ac1296b709f4427d4c7785a322d78a2.png");
+    /*repeat => repeat or no-repeat or repeat-x or repeat-y */
+    background-repeat:  repeat ;
+    /* position => center left right */
+    /* 
+    background-position: center center;
+    */
+    /* position using px => */
+    /*
+    background-position: 300px 200px;
+    background-position: 50% 50%; 
+    */
+    padding-left: 20px;
+    padding-top: 10px;
+}
+body{
+    background-image: url(../img/download.jpg);
+     /*attachment => fixed ( move with you ) scroll (stay above) ( default )*/
+    background-attachment: fixed ;
+    background-repeat:  no-repeat ;
+       /* cover: all the size ( the size not change )
+       contain: size of background change to completly appear
+       you can put hight and width 
+    */
+    background-size: cover;
+    /* top right bottom left  */
+    padding: 10px ;
+    margin: 20px;
+}

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Linearity calculator"
+		},
+		{
+			"path": "..\\CSS test 1"
+		}
+	],
+	"settings": {},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools"
+		]
+	}
+}

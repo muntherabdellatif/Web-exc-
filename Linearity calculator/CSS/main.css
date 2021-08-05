@@ -1,0 +1,8 @@
+body{
+    background-image: url("../img/animated-html-css-ripples-background-example.png");
+    background-size: cover ;
+    background-attachment: fixed;
+    padding: 20px;
+    width: 70%;
+    margin-left: 5%;
+}
