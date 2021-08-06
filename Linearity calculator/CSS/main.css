@@ -2,7 +2,22 @@ body{
     background-image: url("../img/animated-html-css-ripples-background-example.png");
     background-size: cover ;
     background-attachment: fixed;
-    padding: 20px;
-    width: 70%;
-    margin-left: 5%;
+    margin: 40px;
+}
+.input-table {
+padding: 20px;
+width: 50%;
+margin-right: 40%;
+margin-left: 10%;
+border: indigo 2px ;
+border-style: solid;
+}
+
+.header{
+    padding: 0px;
+    width: 60%;
+    margin-right: 30%;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }

@@ -4,6 +4,10 @@
     width: 70%;
     /* auto make your element in the med */
     margin: auto ;
+    border-width: 3px;
+    border-style: double;
+    border-color: brown;
+    outline: double green 3px;
 }
 .text-area{
     background-image: url("../img/5ac1296b709f4427d4c7785a322d78a2.png");

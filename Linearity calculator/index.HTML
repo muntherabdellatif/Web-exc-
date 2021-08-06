@@ -8,11 +8,12 @@
 </head>
 
 <body>
-    <h1>linearity test calculator by Munther Abdellatif </h1>
-    <form action="">
+    <h1 class="header">linearity test calculator by Munther Abdellatif </h1>
+
+    <form action="" class="input-table">
         <table>
             <caption>
-                Input data
+                <h2> Input data</h2>
             </caption>
             <thead>
                 <tr>
@@ -55,8 +56,11 @@
                 </tr>
             </tbody>
         </table>
+        <input type="button" name="calc" value="Calc" onclick="Calc(Finput,Foutput)">
     </form>
-    <input type="button" name="calc" value="Calc" onclick="Calc(Finput,Foutput)">
+    <img id="ctl00_MainContent_Chart1"
+        src="/tests/regression/ChartImg.axd?i=charts_2/chart_2_20.png&amp;g=1798711e84ef499784608e9fc87e58e7" alt=""
+        style="height:350px;width:400px;border-width:0px;">
 </body>
 
 </html>

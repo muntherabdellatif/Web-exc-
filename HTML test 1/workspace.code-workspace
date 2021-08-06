@@ -10,7 +10,9 @@
 			"path": "..\\CSS test 1"
 		}
 	],
-	"settings": {},
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Linearity calculator"
+	},
 	"extensions": {
 		"recommendations": [
 			"ms-vscode.cpptools"
