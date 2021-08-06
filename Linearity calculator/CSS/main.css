@@ -4,13 +4,13 @@ body{
     background-attachment: fixed;
     margin: 40px;
 }
+
 .input-table {
 padding: 20px;
-width: 50%;
+width: fit-content;
 margin-right: 40%;
 margin-left: 10%;
-border: indigo 2px ;
-border-style: solid;
+border: indigo 2px solid ;
 }
 
 .header{
@@ -20,4 +20,8 @@ border-style: solid;
     margin-left: 10%;
     margin-top: 20px;
     margin-bottom: 0px;
+}
+
+.by {
+    color: brown;
 }

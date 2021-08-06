@@ -1,0 +1,87 @@
+/*
+shadow => h-shadow v-shadow blur color 
+text align => the text in left , right and center
+text direction => ltr ( left to right )
+text transform => do some change in the text like making first later capital
+*/
+.shadow{
+    text-shadow: 4px 3px 2px rgb(148 94 94);
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px; /* set space between letter */
+    word-spacing: 5px; /* set space between word */
+}
+/*over flow scroll */
+.over {
+width: 200px;
+height: 200px;
+border: solid brown 2px;
+overflow: scroll;
+margin: 20px auto;
+border-radius: 10px;
+padding: 20px;
+display: inline-block;
+}
+/* over flow auto */
+.auto {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: solid brown 2px;
+    overflow: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px; 
+    line-height: 1.7; /* distance between lines */
+}
+.arab {
+    text-align: right;
+    direction: rtl;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: solid brown 2px;
+    overflow: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px; 
+}
+/*
+ vertical-align to set the position of the text related to img 
+*/
+.logo {
+    text-align: left;
+    direction: ltr;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;   
+}
+.img-text {
+    text-indent: 312px; /*space before text */
+    display: inline-block;    
+}
+/* text-decoration: none; use to remove the under line from link */
+.google {
+    color: white;
+    background-color: red;
+    width: fit-content;
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 2px;
+}
+.ell , .ell2 {
+    padding: 2px;
+    width: 150px;
+    background-color: thistle;
+    white-space: nowrap;/* اذا كان الكلام اكبر من العرض اجعله يخرج منه*/
+    overflow: hidden;/*اقطع الكلام الزائد عن العرض المحدد */
+    text-overflow: ellipsis; /* ضع نقاط لبيان ان جزء من النص مقطوع*/
+}
+/* 
+: hover => 
+تستخدم لعمل شيء معين عن وضع السهم على عنصر ما 
+*/
+.ell:hover { 
+    overflow: visible;
+}
+

@@ -13,7 +13,7 @@ inline block=>
 
 
 */
-div{
+.D{
     background-color: green;
     padding: 10px;
     margin: 10px;
@@ -21,7 +21,7 @@ div{
     height: 20px;
 }
 
-span{
+.S{
     background-color: grey;
     width: 100px;
     height: 20px;
@@ -60,6 +60,12 @@ visibility hidden => الغنصر مخفي و العناصر لا تاتي مك�
     background-color: grey;
     width: 200px;
     height: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+.width {
+    background-color: rgb(201, 28, 28);
+    display: inline-block; 
     padding: 10px;
     margin: 20px;
 }
