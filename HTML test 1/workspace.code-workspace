@@ -8,10 +8,13 @@
 		},
 		{
 			"path": "..\\CSS test 1"
+		},
+		{
+			"path": "..\\Mabdellatif"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "CSS test 1"
+		"liveServer.settings.multiRootWorkspaceName": "Mabdellatif"
 	},
 	"extensions": {
 		"recommendations": [

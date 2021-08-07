@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(149, 149, 221);
+    border:brown solid 2px;
+}
 /*
 shadow => h-shadow v-shadow blur color 
 text align => the text in left , right and center
@@ -5,17 +9,19 @@ text direction => ltr ( left to right )
 text transform => do some change in the text like making first later capital
 */
 .shadow{
+    font-family: 'MonteCarlo', cursive; /* text type */
     text-shadow: 4px 3px 2px rgb(148 94 94);
     text-align: center;
     text-transform: capitalize;
     letter-spacing: 3px; /* set space between letter */
     word-spacing: 5px; /* set space between word */
+    font-size: xx-large; /* size of word */
 }
 /*over flow scroll */
 .over {
 width: 200px;
 height: 200px;
-border: solid brown 2px;
+border: inherit ;
 overflow: scroll;
 margin: 20px auto;
 border-radius: 10px;
@@ -27,7 +33,7 @@ display: inline-block;
     display: inline-block;
     width: 200px;
     height: 200px;
-    border: solid brown 2px;
+    border : inherit;
     overflow: auto;
     margin: 20px auto;
     border-radius: 10px;
@@ -40,7 +46,7 @@ display: inline-block;
     display: inline-block;
     width: 200px;
     height: 200px;
-    border: solid brown 2px;
+    border: inherit;
     overflow: auto;
     margin: 20px auto;
     border-radius: 10px;
