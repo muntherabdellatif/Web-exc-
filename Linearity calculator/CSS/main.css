@@ -23,5 +23,8 @@ border: indigo 2px solid ;
 }
 
 .by {
+    position: absolute;
     color: brown;
+    bottom: 10px ;
+    right: 10px;
 }

@@ -1,0 +1,87 @@
+.main-div {
+    background-color: red;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+.main-div div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: seashell;
+    width: 25%;
+    float: left;
+}
+.clear {
+    clear:both;
+}
+.div2 {
+    background-color: red;
+}
+.div2 div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: seashell;
+    width :calc( ( 100% - 90px ) /5 );
+    margin-left: 15px;
+    float: left;
+}
+/* 
+position :
+1) static => default .
+2) relative => can move using top bottom left and right .
+3) absolute => move related to page .
+( to move element in side box , the box must be relative )
+4) fixed => like absolute but :
+   can go out relative element box .
+   move when screen move down or up .
+5) sticky => stay in screen when it moving up and down in position you set .
+
+*/
+.my-div {
+    background-color: white;
+    padding: 10px;
+    width: 200px;
+}
+.one {
+    color: green;
+    font-size: xx-large;
+    opacity: 0.2 ;
+}
+.two {
+    color: red;
+    position: relative ;
+    top: -23px;
+}
+
+.box {
+    background-color: royalblue;
+    width:  200px; /* 200 - 10*4 =160/2*/
+    height: 200px;
+    position: relative;
+}
+.box div {
+    position: absolute;
+    width:  80px;
+    height: 80px;
+    margin: 5px;
+    padding: 5px;
+    background-color: saddlebrown;
+}
+.element1 {
+    top: 0;
+    left: 0;
+}
+.element2 {
+    top: 0;
+    right: 0;
+}
+.element3 {
+    bottom: 0;
+    left: 0;
+}
+.element4 {
+    bottom: 0;
+    right: 0;
+}

@@ -30,6 +30,8 @@ display: inline-block;
 }
 /* over flow auto */
 .auto {
+    font-style: italic; /* نص مائل  */
+    font-weight: 800 ; /*عرض الخط */
     display: inline-block;
     width: 200px;
     height: 200px;
@@ -89,5 +91,9 @@ display: inline-block;
 */
 .ell:hover { 
     overflow: visible;
+}
+.opacity {
+    font-size: xx-large ;
+    opacity: 0.2;
 }
 
