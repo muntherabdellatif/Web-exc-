@@ -1,0 +1,53 @@
+.n div {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+}
+.n1 {
+    background-color: red;
+    left: 0;
+    top: 0;
+}
+.n2 {
+    background-color: green;
+    left: 10px;
+    top: 10px;
+}
+.n3 {
+    background-color: blue;
+    left: 20px;
+    top: 20px;
+}
+/* 
+z-index =>
+تستخدم لتحديد ترتيب العناصر ( مين فوق مين ).
+*/
+.m {
+    position: absolute;
+    left: 150px;
+    top: 0px;
+}
+.m div{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+}
+.m1 {
+    background-color: red;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.m2 {
+    background-color: green;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+}
+.m3 {
+    background-color: blue;
+    left: 20px;
+    top: 20px;
+}

@@ -1,0 +1,44 @@
+
+.list li {
+    background-color: #919196;
+    margin-bottom: 10px;
+}
+.list {
+    list-style-type: disclosure-open;
+    list-style-position: inside ;
+    background-color: #c1bfbf;
+}
+.C {
+    list-style-type: lower-greek;
+}
+.C li {
+    background-color: #606064;
+}
+.web {
+    list-style-type: square ;
+}
+.web li {
+    background-color: #606064;
+}
+.list2 , .C2 , .web2{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+table {
+    width: 100%;
+    border: cadetblue 2px solid;
+    border-spacing: 5px ;
+}
+td {
+    text-align: center;
+    background-color: #cfcdc5;
+    padding: 2px;
+}
+th {
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 2px;
+}

@@ -1,0 +1,39 @@
+body {
+    background-color: white;
+}
+.left-right {
+    background-color: rgb(185, 178, 178);
+    position: relative;
+    width: 100%;
+    min-height: 1000px;
+    left: 0;
+    top: 0;
+}
+.left-right div {
+    margin-left: 1%;
+    height: 1000px;
+}
+.left-right .left {
+    background-color: rgb(176, 224, 164);
+    width: 27%;
+    position: absolute;
+    min-height: inherit;
+}
+.left-right .right {
+    background-color: rgb(164, 188, 224);
+    width: 70%;
+    position: absolute;
+    min-height: inherit;
+    right: 1%;
+}
+.clear {
+    clear: both;
+}
+.right div {
+    margin-top: 1%;
+    background-color: rgb(224, 188, 164);
+    width: 100%;
+    position: relative;
+    height: 18%;
+    right: 1%;
+}

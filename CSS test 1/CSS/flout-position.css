@@ -3,6 +3,7 @@
     padding: 10px;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 .main-div div {
     padding-top: 10px;

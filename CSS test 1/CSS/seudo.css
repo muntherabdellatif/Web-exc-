@@ -1,0 +1,62 @@
+/* 
+hover => الضغط على العنصر
+checked => الضغط على قائمة اختيار
+focus => الوقوف على نص ( ادخال )
+visited => رابط تم الدخول عليه
+first-latter => الوصول الى اول حرف في نص
+first-line => الوصول الى اول سطر في نص 
+*/
+a {
+    text-decoration: none ;
+    color: red ;
+}
+a:hover {
+    color: turquoise;
+}
+.check + label {
+    color: red;
+}
+.check:checked + label {
+    color: green;
+}
+.text {
+    border: grey 4px solid;
+}
+.text:focus {
+    border-color: yellow;
+}
+.p1::first-letter {
+    font-size: 62px;
+    background-color: red;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+.p2::first-line {
+    color:blue ;
+    font-weight: bold;
+}
+.p3::selection {
+    color: red;
+    background-color: black;
+}
+.name {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.name-p {
+    background-color: grey;
+    padding: 10px;
+    width: 600px;
+    float: left;
+}
+.name-latter {
+    background-color: grey;
+    width: 84px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 85.5px;
+    float: left;
+    font-size: 70px;
+    text-align: center;
+}
