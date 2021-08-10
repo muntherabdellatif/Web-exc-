@@ -1,0 +1,50 @@
+body {
+    background-color: gray;
+}
+.main-page-area {
+  overflow: hidden;
+}
+.main-page-area div {
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.left-side {
+    background-color: white;
+    width: 27%;
+    height: 100%;
+    position: fixed;
+}
+.right-side {
+    background-color: gray;
+    width: 70%;
+    height: fit-content;
+    position: absolute;
+    right: 0%;
+    overflow: hidden;
+}
+.right-side div {
+    background-color: white;
+    width: 100%;
+    margin-bottom: 1% ;
+    position: relative;
+    padding: 1%;
+    height: fit-content;
+    float: left ;
+    top: 52px;
+}
+.clear {
+    clear: both;
+}
+header {
+    width: 100%;
+    left: 30%;
+    padding: 0%;
+    position: fixed;
+    height: 46px;
+    background-color: gray;
+    z-index: 10;
+    padding-top: 2%;
+    top: 0 ;
+    color: tome6d96aato;
+}
