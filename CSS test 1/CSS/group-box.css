@@ -1,0 +1,73 @@
+.one {
+    border-bottom: black 10px solid;
+    color: black;
+}
+.two {
+    border-bottom: blue 10px solid ;
+    color: blue;
+}
+.three {
+    border-bottom: green 10px solid;
+    color: green;
+}
+.four {
+border-bottom: red 10px solid;
+color: red;
+}
+.one,
+.two,
+.three,
+.four{
+    background-color: #eee;
+    margin: 20px;
+    padding: 20px;
+}
+.contant {
+    width : 100% ;
+    height: fit-content;
+    background-color: red;
+}
+.contant div {
+    width:10px;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+    display: inline-block;
+    background-color: saddlebrown;
+}
+.contant {
+    width : 100% ;
+    height: fit-content;
+    background-color: red;
+}
+.contant div {
+    width:500px;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+    display: inline-block;
+    background-color: saddlebrown;
+    box-sizing: content-box;
+}
+.border {
+    width : 100% ;
+    height: fit-content;
+    background-color: red;
+}
+.border div {
+    width:500px;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+    display: inline-block;
+    background-color: saddlebrown;
+    /* box-sizing: border-box; */
+}
+* {
+    /*
+    اي شيء يكتب هنا يطبق على جميع العناصر 
+    */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

@@ -1,0 +1,144 @@
+/* method 1 */
+.name {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.name-p {
+    background-color: grey;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+.name-p span {
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    top: 1px;
+    right: -36px;
+}
+.pipeline1 {
+    background-color: blue;
+}
+.pipeline2 {
+    background-color: green;
+}
+.pipeline3 {
+    background-color: gray;
+}
+.name-latter {
+    background-color: grey;
+    width: 84px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 85.5px;
+    float: left;
+    font-size: 70px;
+    text-align: center;
+}
+/* using after */
+.name-p2 ,.name-p1 ,.name-p3 {
+    background-color: grey;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+    left: 40px;
+}
+.name-p1::before {
+    content: " ";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background-color: blue;
+    left: -60px;
+    top: 29px;
+    border-color: transparent blue transparent transparent;
+    border-style: solid;
+    border-width: 23px
+}
+.name-p2::before {
+    content: " ";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    /* background-color: blue; */
+    left: -60px;
+    top: 29px;
+    border-color: transparent green transparent transparent;
+    border-style: solid;
+    border-width: 23px
+}
+.name-p3::before {
+    content: " ";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    /* background-color: blue; */
+    left: -60px;
+    top: 29px;
+    border-color: transparent gray transparent transparent;
+    border-style: solid;
+    border-width: 23px
+}
+.name-p1::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    top: 1px;
+    right: -36px;
+    background-color: blue;
+}
+.name-p2::after {
+    content:"";
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    top: 1px;
+    right: -36px;
+    background-color: green;
+}
+.name-p3::after {
+    content:"";
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    top: 1px;
+    right: -36px;
+    background-color: gray;
+}
+/* adding counter  */
+.name2 {
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: counter;
+}
+.name3 {
+    background-color: grey;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+    left: 40px;
+}
+.name3::after {
+    content: counter(counter);
+    position: absolute;
+    right: -67px;
+    bottom: 34px;
+    font-size: xx-large;
+}
+/* adding attr */
+.name3:hover::before {
+    display: block;
+    background-color: red;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.name3::before {
+    content: attr(data-text) ;
+    display: none;
+}

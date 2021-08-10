@@ -40,23 +40,3 @@ a:hover {
     color: red;
     background-color: black;
 }
-.name {
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-.name-p {
-    background-color: grey;
-    padding: 10px;
-    width: 600px;
-    float: left;
-}
-.name-latter {
-    background-color: grey;
-    width: 84px;
-    margin-right: 20px;
-    padding: 10px;
-    height: 85.5px;
-    float: left;
-    font-size: 70px;
-    text-align: center;
-}

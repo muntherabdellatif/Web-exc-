@@ -1,0 +1,29 @@
+/* 
+Vendor Prefixes :
+The CSS browser prefixes that you can use (each of which is specific to a different browser) are:
+Android: -webkit-
+Chrome: -webkit-
+Firefox: -moz-
+Internet Explorer: -ms-
+iOS: -webkit-
+Opera: -o-
+Safari: -webkit-
+ */
+.list {
+    display: none ;
+}
+.list-body:hover .list {
+    display: block;
+}
+.lang-list , .skill-list {
+    display: none;
+}
+.lang-li:hover .lang-list {
+    display: block;
+}
+.skill-li:hover .skill-list {
+    display: block;
+}
+label {
+    cursor: pointer;
+}

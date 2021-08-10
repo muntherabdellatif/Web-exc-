@@ -55,6 +55,7 @@ header {
     left: 25%;
     top: 10px;
     border-radius: 10px;
+    box-shadow:  -4px 5px 19px 0 grey;
 }
 .name {
     text-align: center;
@@ -84,11 +85,11 @@ header {
     border-radius: 2%;
     position: absolute;
     cursor: pointer;
-    top: 476px;
+    top: 540px;
     left: 23%;
 }
 .download-img {
-    top: 504px;
+    top: 571px;
     left: 29%;
     width: 27px;
     height: 27px;
@@ -116,7 +117,12 @@ header span {
     margin: 10px;
     position: relative;
     left: 67%;
-    border-radius: 10%
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    box-shadow:  -4px 5px 19px 0 grey;
 }
 .home-p .span1 {
     font-family: 'Righteous', cursive;
@@ -157,7 +163,7 @@ header span {
     height: 230px;
     margin: 10px;
     padding: 2px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 .box div {
     min-width: 102px;
@@ -166,6 +172,8 @@ header span {
     padding: 2px;
     display: inline-block;
     background-color: white;
+    /* box shadow => H , V , BLUR , SPREED , COLOR , INSET  */
+    box-shadow: -7px 7px 20px 0px grey;
 }
 .box1 {
     border-bottom : red 2px solid
@@ -198,4 +206,8 @@ header span {
 .section2 .text {
     text-align: justify;
     margin: 3%;
+}
+*::selection{
+background-color: gray;
+color:white;
 }
