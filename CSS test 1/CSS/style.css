@@ -2,4 +2,8 @@
     color: rgb(41, 57, 194);
     font-size: 50px;
 }
+.important {
+    color: rgb(41, 194, 61) !important; 
+    font-size: 50px;
+}
 
