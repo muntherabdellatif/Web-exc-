@@ -1,5 +1,8 @@
+:root {
+    --mainColor : gray;
+}
 body {
-    background-color: gray;
+    background-color: var(--mainColor);
 }
 .main-page-area {
   overflow: hidden;
@@ -16,7 +19,7 @@ body {
     position: fixed;
 }
 .right-side {
-    background-color: gray;
+    background-color:  var(--mainColor);
     width: 70%;
     height: fit-content;
     position: absolute;
@@ -30,7 +33,6 @@ body {
     position: relative;
     padding: 1%;
     height: fit-content;
-    float: left ;
     top: 52px;
 }
 .clear {
@@ -55,7 +57,11 @@ header {
     left: 25%;
     top: 10px;
     border-radius: 10px;
-    box-shadow:  -4px 5px 19px 0 grey;
+    box-shadow:  -4px 5px 19px 0  var(--mainColor);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .name {
     text-align: center;
@@ -87,6 +93,10 @@ header {
     cursor: pointer;
     top: 540px;
     left: 23%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
 }
 .download-img {
     top: 571px;
@@ -122,7 +132,7 @@ header span {
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
-    box-shadow:  -4px 5px 19px 0 grey;
+    box-shadow:  -4px 5px 19px 0  var(--mainColor);
 }
 .home-p .span1 {
     font-family: 'Righteous', cursive;
@@ -173,7 +183,7 @@ header span {
     display: inline-block;
     background-color: white;
     /* box shadow => H , V , BLUR , SPREED , COLOR , INSET  */
-    box-shadow: -7px 7px 20px 0px grey;
+    box-shadow: -7px 7px 20px 0px  var(--mainColor);
 }
 .box1 {
     border-bottom : red 2px solid
@@ -208,6 +218,6 @@ header span {
     margin: 3%;
 }
 *::selection{
-background-color: gray;
+background-color:  var(--mainColor);
 color:white;
 }

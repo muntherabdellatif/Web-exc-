@@ -1,0 +1,41 @@
+/*
+ creating variabels in CSS 
+var ( value of variable , fallback value )
+fallback value :
+هي قيمة احتياطية في حال لم يكن هذا المتغير موجود
+*/
+:root{
+--maincolor : green ;
+--mianpadding : 10px;
+--mainSize: 20px;
+}
+.main-div , .title , .p , .link {
+    padding: var(--mianpadding);
+}
+.main-div {
+    background-color: var(--maincolor);
+}
+.main-div , .title {
+    font-size: calc( var(--mainSize) + 10px);
+    text-transform: capitalize;
+}
+.main-div {
+    color: white;
+    }
+.title , .p {
+    background-color: lavender;
+}
+.title {
+    color: var(--maincolor);
+}
+.p {
+    border: var(--maincolor) 2px solid;
+    font-size: var(--mainSize);
+}
+.link {
+    color: red;
+    text-decoration: none;
+}
+.link:hover  {
+    color: var(--maincolor);
+}

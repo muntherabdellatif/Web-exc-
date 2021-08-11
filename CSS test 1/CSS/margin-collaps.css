@@ -1,0 +1,36 @@
+.perant {
+    background-color: gainsboro;
+    width: 70%;
+    padding: 3%;
+    margin: auto;
+    height: 400px;
+    overflow: hidden;
+}
+.one{
+    width: 50%;
+    background-color: gray;
+    float: left;
+    height: inherit;
+}
+.two{
+    width: 50%;
+    background-color: gainsboro;
+    float: left;
+    height: inherit;
+}
+.up {
+    width: 100%;
+    background-color: rgb(181, 54, 192);
+    height: 195px;
+    margin-bottom: 10px;
+}
+.down {
+    width: 100%;
+    background-color: green;
+    height: 195px;
+    margin-top: 10px;
+}
+/*
+ collaps appear just on vertical margin
+there is no collaps between two element when ather element inbetween .
+*/
