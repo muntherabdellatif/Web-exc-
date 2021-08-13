@@ -1,0 +1,129 @@
+/* 
+for child =>
+flex grow ( increasing the size of element with respect to ather element when extra space appered )
+flex shrink ( decreasing the size of element with respect to ather element when no space  )
+order ( define the order on the element in the flex )
+flex basis ( the width or hight of element (depend on flex direction ( row=> width ) ( column => hight ) ) )
+flex : [grow] [shrink] [basis] ( default 0 1 auto )
+*/
+.grow {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    width: 500px;
+}
+.grow div {
+    color: white;
+}
+.grow .one {
+    flex-grow: 1;
+    background-color: green;
+}
+.grow .two {
+    flex-grow: 2;
+    background-color: gray;
+}
+.grow .three {
+    flex-grow:  3;
+    background-color: yellow;
+    color: black;
+}
+/* ------------------------ */
+.shrink {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    width: 500px;
+}
+.shrink div {
+    color: white;
+    width: 300px;
+}
+.shrink .one {
+    flex-shrink: 1;
+    background-color: green;
+}
+.shrink .two {
+    flex-shrink: 2;
+    background-color: gray;
+}
+.shrink .three {
+    flex-shrink: 3;
+    background-color: yellow;
+    color: black;
+}
+/* --------------------------------------- */
+.order {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    width: 600px;
+}
+.order div {
+    color: white;
+    width: 200px;
+}
+.order .one {
+    order: 3;
+    background-color: green;
+}
+.order .two {
+    order: 1;
+    background-color: gray;
+}
+.order .three {
+    order: 2;
+    background-color: yellow;
+    color: black;
+}
+/* ---------------------------------------------- */
+.bases {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    width: 600px;
+    transition-duration: 1s;
+}
+.bases div {
+    color: white;
+}
+.bases .one {
+    flex-basis: 100px ;
+    background-color: green;
+}
+.bases .two {
+    flex-basis: 200px;
+    background-color: gray;
+}
+.bases .three {
+    flex-basis: 300px;
+    background-color: yellow;
+    color: black; 
+}
+.bases:hover {
+    flex-direction: column;
+}
+/* ------------------------------------------------- */
+.order2 {
+    display: inline-flex;
+    flex-direction: row;
+    background-color: red;
+    width: 600px;
+}
+.order2 div {
+    color: white;
+    width: 200px;
+}
+.order2 .one {
+    order: 3;
+    background-color: green;
+}
+.order2 .two {
+    order: 1;
+    background-color: gray;
+}
+.order2 .three {
+    order: 2;
+    background-color: yellow;
+    color: black;
+}
