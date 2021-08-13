@@ -1,0 +1,39 @@
+:root {
+    --main-color: gray ;
+    --main-margin: 10px;
+    --left-width :300px ;
+    --right-width :1125px;
+}
+body {
+    background-color: var(--main-color);
+}
+.upper-side{
+    display: flex;
+    flex-direction: row;
+    width: calc(var(--left-width) + var(--right-width) + var(--main-margin)*2);
+    margin: var(--main-margin);
+}
+.left {
+    width: var(--left-width);
+    background-color: white;
+    margin-left: var(--main-margin) ;
+    margin-bottom: var(--main-margin);
+}
+.right {
+    width: var(--right-width);
+    margin-left: var(--main-margin);
+    display: flex;
+    flex-direction: column;
+}
+.right div {
+    background-color: white;
+    padding: var(--main-margin);
+    margin-bottom: var(--main-margin);
+    height: fit-content;
+}
+.lower-side {
+    width: calc(var(--left-width) + var(--right-width) + var(--main-margin));
+    background-color: white;
+    height: fit-content;
+    margin-left: calc( var(--main-margin) * 2);
+}

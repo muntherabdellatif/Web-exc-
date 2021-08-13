@@ -1,0 +1,94 @@
+.flex , .flex2 , .flex3 {
+    width: 100%;
+    background-color: grey;
+    height: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+}
+.flex {
+    flex-wrap: wrap;
+}
+.flex2 {
+    justify-content: space-between;
+}
+.flex3 {
+    height: 100px;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.flex span {
+    width: 33.33%;
+    text-align: center;
+    background-color: red;
+}
+.flex2 span {
+    width: 24%;
+    text-align: center;
+    background-color: red;
+}
+.flex3 span {
+    width: 24%;
+    text-align: center;
+    background-color: red;
+}
+.i1 {
+    height: 20px;
+}
+.i2 {
+    height: 70px;
+}
+.i3 {
+    height: 50px;
+}
+.i4 {
+    height: 100px;
+}
+.flex:hover {
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.flex2:hover {
+    justify-content: space-around;
+}
+/* 
+flex direction =>
+ * default value is ( row ) , you can change it to ( row-reverse ,column ,column-reverse) .
+ flex wrap =>
+ * default value (nowrap " the box streching ") ,
+ * wrap ( extra element go to next line )
+ * justify-contant : control element distribution ( center , end , space-around , space-between )
+ * align-items: stratch => default valve .
+ حجم العنصر يتمدد عموديا ليصبح نفس حجم المحتوى الا اذا تم تحديد حجمه مسبقا 
+ ( flex-end , flex-start , flex-center ) ( vertical align )
+ * align contant :stratch => default valve .
+  ( flex-end , flex-start , flex-center ) ( vertical align )( moving all contant )
+   use to put space between element verticaly (  space-around , space-between )
+*/
+.center {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column span {
+    width: 200px;
+    text-align: center;
+    background-color: red;
+    height: 100px;
+}
+.flex-column {
+    width: 420px;
+    background-color: grey;
+    height: 220px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around; /*space between vertically*/
+    justify-content: space-between; /*space between horizantally*/
+}
