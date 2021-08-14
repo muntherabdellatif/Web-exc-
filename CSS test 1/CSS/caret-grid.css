@@ -1,0 +1,31 @@
+.p {
+caret-color: red;
+/* لون السهم في حيز الكتابة */
+}
+a {
+    pointer-events: none;
+    /* لا يحدث شيء عن الضغط على الرابط  */
+}
+/* -------------------------------------------------------- */
+/* 
+grid sys :
+perant :
+display grid . || display inline-grid
+grid-template-columns: ( number of columns in ( px , % , auto , repeat( number of columns , size ) , fraction (2fr ) , mix ) )
+auto take space as contant need , fraction take more than auto if come togather
+*/
+.grid {
+    margin: auto;
+    display: grid;
+    width: 70%;
+    height: 500px;
+    background-color: seashell;
+    grid-template-columns: repeat(2 , calc(100%/3)) 1fr 2fr auto;
+}
+.grid div {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: x-large;
+}

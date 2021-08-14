@@ -127,3 +127,71 @@ flex : [grow] [shrink] [basis] ( default 0 1 auto )
     background-color: yellow;
     color: black;
 }
+/* 
+flter=>
+greyscale ( to make black and wight img )
+ */
+/* --------------------------------------- */
+.img1 , .img2 , .img3{
+    width: 100px;
+    height: 100px;
+}
+.img1 {
+    filter:grayscale(0);
+    -webkit-filter:grayscale(100%);
+}
+.img2 {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+.img3 {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+.img1:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+.img2:hover {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+}
+.img3:hover {
+    filter: invert(0%);
+    -webkit-filter: invert(0%);
+}
+/*
+background-image : 
+gradient => linrear-gradient (direztion || angle , color stop 1 , color stop 2 , ... )
+to right , to top , to bottom , to left , 45deg
+you can but the percent for all color 
+*/
+body {
+    background-image: linear-gradient(272deg, #bdbdbd 10% , #fafafa);
+}
+.GR {
+    background-color: cornsilk;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+.GR::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0px;
+    width: 800px;
+    height: 15px;
+    /* background-color: black; */
+    background-image: linear-gradient(272deg,
+     #e0f2f1 20% ,
+     #4caf50 20% ,
+     #4caf50 40% ,
+     #aed581 40% ,
+     #aed581 60% ,
+     #cddc39 60% ,
+     #cddc39 80% ,
+     #ffeb3b 80% ,
+     #ffeb3b 100% );
+}
