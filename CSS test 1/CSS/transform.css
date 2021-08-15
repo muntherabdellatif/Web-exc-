@@ -1,3 +1,65 @@
 /*
- transform
+ 2D transform 
+ scalex() , scaley() , scale() : stretches thr element .
+ rotate ( rad ,deg , turn )
   */
+  .name {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      color: white;
+      margin: auto;
+      transform:scaleX(2);
+      transition: 0.5s;
+}
+.name:hover {
+    transform:scale(-2 , 1);
+    -webkit-transform:scale(-2 , 1);
+    -moz-transform:scale(-2 , 1);
+    -ms-transform:scale(-2 , 1);
+    -o-transform:scale(-2 , 1);
+}
+.heart-left {
+    width: 140px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    margin: auto;
+    top: 77px;
+    transform: rotate(315deg);
+    border-radius: 0% 50% 50% 0%
+}
+.heart-right {
+    left: -34px;
+    width: 149px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    margin: auto;
+    top: -23px;
+    transform: rotate(45deg);
+    border-radius: 50% 19% 0% 50%;
+}
+.box {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+    background-color: grey;
+}
+.box:hover {
+    transform: rotate(5turn);
+    -webkit-transform: rotate(5turn);
+    -moz-transform: rotate(5turn);
+    -ms-transform: rotate(5turn);
+    -o-transform: rotate(5turn);
+    left :200px;
+}
