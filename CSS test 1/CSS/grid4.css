@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    height: fit-content;
+    background-color: rgb(185, 169, 158);
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 10px 10px;
+}
+.grid div  {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: x-large;
+}

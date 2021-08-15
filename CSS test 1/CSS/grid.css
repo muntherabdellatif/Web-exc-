@@ -9,8 +9,10 @@ perant :
 ( gap : row-gap column-gap ;)
 *justify-contant ( center , flex-start , flex-end , space-between space-around , space-evenly) (horizantally)
 * align-contant (flex-start , flex-end ,center , space-between space-around ) (verticaly)
+child :
+grid-column : ( تستخدم لدمج الاعمدة )
 */
-.grid , .grid2 {
+.grid , .grid2 , .grid3 {
     margin: auto;
     display: grid;
     width: 70%;
@@ -35,10 +37,36 @@ perant :
     justify-content: space-evenly;
     align-content: center;
 }
-.grid div , .grid2 div {
+.grid div , .grid2 div , .grid3 div {
     background-color: red;
     color: white;
     text-align: center;
     padding: 30px;
     font-size: x-large;
+}
+.grid3 {
+    gap: 10px 10px;
+    grid-template-columns: repeat(4 , 1fr) ;
+    grid-template-rows: repeat(5 ,1fr);
+}
+.grid3 .one {
+    grid-row: span 4;
+    background-color: red;
+    color: white;
+}
+.grid3 .two {
+    grid-column: span 3;
+    background-color: green;
+    color: white;
+}
+.grid3 .three {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-color: blue;
+    color: white;
+}
+.grid3 .four {
+    grid-column: span 4;
+    background-color: gray;
+    color: white;
 }
