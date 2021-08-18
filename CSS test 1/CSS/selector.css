@@ -1,0 +1,52 @@
+/* selector : 
+1) *  => to select all element 
+2) element => example ( p ,div ,span ...)
+3) element1 element2 => example ( select all element2 in element1 )
+4) .class-name => ( select all element have this class name )
+5) #id-name => ( select all element have this ID name )
+6) .perant .child => ( select all element have this class child name in element have class perant name )
+7) .class1.class2 => (select element have class1 and class2  name )
+8) element.classname => ( example ( div.class-name ) select any div have " class-name " class name )
+9) .perant > .child => (direct child of perant ) 
+10).element1 + .element2 ( select element2 witch next element1 (directly) )
+11).element1 ~ .element2 ( select all element2 witch next element1 ( in the same line ) ) 
+12)[attribute] ( select all element that have the attribute )
+13)element[attribute] ( select any element with type "element" and have the attribute )
+14)[attribute=value] ( select all element that have the attribute with value "value")
+15)element[attribute=value]  ( select any element with type "element" and have the attribute with value "value")
+16)[attribute~=value] (select all element that have the attribute contains word "value")
+17)element[attribute~=value]  ( select any element with type "element" and have the attribute contains word "value")
+18)[attribute*=value] (select all element that have the attribute contains string "value")
+19)element[attribute*=value]  ( select any element with type "element" and have the attribute contains string "value")
+18)[attribute^=value] (select all element that have the attribute start with string "value")
+19)element[attribute^=value]  ( select any element with type "element" and have the attribute start with string "value")
+ */
+ .perant div {
+    font-size: x-large;
+    color: black;
+ }
+ .perant > div {
+     color: red;
+ }
+ div + p {
+     color: brown;
+ }
+ .my-p ~ div {
+     color: green;
+ }
+ [title] {
+     font-size: xx-large;
+ }
+ div[title=div1]{
+     background-color: grey;
+ }
+ div[title~=div]{
+     background-color: indigo;
+     color: white;
+ }
+ div[title*=div] {
+     margin-left: 50px;
+ }
+ div[title^=div] {
+    font-style: italic;
+}

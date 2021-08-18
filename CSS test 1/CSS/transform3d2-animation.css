@@ -50,7 +50,9 @@ animation :
 keyframes => to make animation 
 animation-name => use to use the animation on any element
 animation-durasion => use to to set animation duration
-
+animation-fill-mode => use to define the final status of element after animation 
+forwords ( stay at final status )
+backwords ( stay at first status )
 */
 .box1-box {
 margin: 20px auto;
@@ -65,7 +67,12 @@ justify-content: center;
     font-size: xx-large;
     animation-name: change-color;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 10 ;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.box1:hover {
+    animation-play-state: paused;
 }
 @keyframes change-color {
     0%{
@@ -75,7 +82,7 @@ justify-content: center;
         background-color: blue;
     }
     100%{
-        background-color: red;
+        background-color: green;
     }
 
 }
@@ -97,14 +104,15 @@ justify-content: center;
     border: solid 5px gray;
     border-top: transparent 5px solid;
     border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    -webkit-border-radius: 100%;
+    -moz-border-radius:100%;
+    -ms-border-radius:100%;
+    -o-border-radius:100%;
+    -webkit-border-radius:100%;
     animation-name: spin;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
+    animation-direction: normal;
 }
 .circle-box p {
     position: relative;
@@ -119,12 +127,15 @@ justify-content: center;
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
-}
+    }
     100%{
-        transform: rotate(2turn);
-        -webkit-transform: rotate(2turn);
-        -moz-transform: rotate(2turn);
-        -ms-transform: rotate(2turn);
-        -o-transform: rotate(2turn);
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
 }
+.circle:hover {
+    animation-direction: reverse;
 }
