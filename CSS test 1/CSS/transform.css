@@ -2,7 +2,34 @@
  2D transform 
  scalex() , scaley() , scale() : stretches thr element .
  rotate ( rad ,deg , turn )
+ translate ( moving in x axis ,  moving in y axis )
+ skew ( deg x , deg y ) انحراف 
+ matrix ( scaleX() , skewX() , skewY() , scaleY() ,translateX() , translateY() )
+ transform-origin ( to define the center of your element )
   */
+  h1 {
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+    margin: auto;
+}
+  h1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    transform: skewX(25deg);
+    -webkit-transform: skewX(25deg);
+    -moz-transform: skewX(25deg);
+    -ms-transform: skewX(25deg);
+    -o-transform: skewX(25deg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
   .name {
       display: flex;
       flex-direction: row;
@@ -13,15 +40,19 @@
       background-color: red;
       color: white;
       margin: auto;
-      transform:scaleX(2);
+      transform:scaleX(2) skewX(10deg);
       transition: 0.5s;
+      -webkit-transform:scaleX(2) skewX(10deg);
+      -moz-transform:scaleX(2) skewX(10deg);
+      -ms-transform:scaleX(2) skewX(10deg);
+      -o-transform:scaleX(2) skewX(10deg);
 }
 .name:hover {
-    transform:scale(-2 , 1);
-    -webkit-transform:scale(-2 , 1);
-    -moz-transform:scale(-2 , 1);
-    -ms-transform:scale(-2 , 1);
-    -o-transform:scale(-2 , 1);
+    transform:scale(-2 , 1) skewX(190deg);
+    -webkit-transform:scale(-2 , 1) skewX(190deg);
+    -moz-transform:scale(-2 , 1) skewX(190deg);
+    -ms-transform:scale(-2 , 1) skewX(190deg);
+    -o-transform:scale(-2 , 1) skewX(190deg);
 }
 .heart-left {
     width: 140px;
@@ -31,7 +62,15 @@
     margin: auto;
     top: 77px;
     transform: rotate(315deg);
-    border-radius: 0% 50% 50% 0%
+    border-radius: 0% 50% 50% 0%;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    -webkit-border-radius: 0% 50% 50% 0%;
+    -moz-border-radius: 0% 50% 50% 0%;
+    -ms-border-radius: 0% 50% 50% 0%;
+    -o-border-radius: 0% 50% 50% 0%;
 }
 .heart-right {
     left: -34px;
@@ -43,8 +82,16 @@
     top: -23px;
     transform: rotate(45deg);
     border-radius: 50% 19% 0% 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-border-radius: 50% 19% 0% 50%;
+    -moz-border-radius: 50% 19% 0% 50%;
+    -ms-border-radius: 50% 19% 0% 50%;
+    -o-border-radius: 50% 19% 0% 50%;
 }
-.box {
+.box , .box2{
     width: 50px;
     height: 50px;
     position: relative;
@@ -53,13 +100,46 @@
     -moz-transition: 5s;
     -ms-transition: 5s;
     -o-transition: 5s;
+}
+.box {
+    background-color: green;
+}
+.box2 {
     background-color: grey;
 }
 .box:hover {
-    transform: rotate(5turn);
-    -webkit-transform: rotate(5turn);
-    -moz-transform: rotate(5turn);
-    -ms-transform: rotate(5turn);
-    -o-transform: rotate(5turn);
-    left :200px;
+    transform: rotate(5turn) translate(500px);
+    -webkit-transform: rotate(5turn) translate(500px);
+    -moz-transform: rotate(5turn) translate(500px);
+    -ms-transform: rotate(5turn) translate(500px);
+    -o-transform: rotate(5turn) translate(500px);
+}
+.box2:hover {
+    transform: translate(500px) rotate(5turn) ;
+    -webkit-transform: translate(500px) rotate(5turn) ;
+    -moz-transform: translate(500px) rotate(5turn) ;
+    -ms-transform: translate(500px) rotate(5turn) ;
+    -o-transform: translate(500px) rotate(5turn) ;
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform-origin: 0% 100% ;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.box4 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
