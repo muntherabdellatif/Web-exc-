@@ -1,0 +1,8 @@
+.perant div {
+    background-color: black;
+}
+.perant {
+    grid-template-columns: repeat(2,200px);
+    align-content: space-around;
+    height: 50px;
+}

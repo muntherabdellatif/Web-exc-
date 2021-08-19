@@ -1,0 +1,93 @@
+/* selector : 
+1) *  => to select all element 
+2) element => example ( p ,div ,span ...)
+3) element1 element2 => example ( select all element2 in element1 )
+4) .class-name => ( select all element have this class name )
+5) #id-name => ( select all element have this ID name )
+6) .perant .child => ( select all element have this class child name in element have class perant name )
+7) .class1.class2 => (select element have class1 and class2  name )
+8) element.classname => ( example ( div.class-name ) select any div have " class-name " class name )
+9) .perant > .child => (direct child of perant ) 
+10).element1 + .element2 ( select element2 witch next element1 (directly) )
+11).element1 ~ .element2 ( select all element2 witch next element1 ( in the same line ) ) 
+12)[attribute] ( select all element that have the attribute )
+13)element[attribute] ( select any element with type "element" and have the attribute )
+14)[attribute=value] ( select all element that have the attribute with value "value")
+15)element[attribute=value]  ( select any element with type "element" and have the attribute with value "value")
+16)[attribute~=value] (select all element that have the attribute contains word "value")
+17)element[attribute~=value]  ( select any element with type "element" and have the attribute contains word "value")
+18)[attribute*=value] (select all element that have the attribute contains string "value")
+19)element[attribute*=value]  ( select any element with type "element" and have the attribute contains string "value")
+18)[attribute^=value] (select all element that have the attribute start with string "value")
+19)element[attribute^=value]  ( select any element with type "element" and have the attribute start with string "value")
+20)element:first-child ( the element is selected if it is the first child of his perant )
+21)element:last-child ( the element is selected if it is the last child of his perant )
+22)element:first-of-type ( the element is selected if it is the first of his type of his perant)
+23)element:last-of-type ( the element is selected if it is the last of his type of his perant)
+24)element:only-child ( the element is selected if it is the only child of his perant )
+25)element:only-of-type ( the element is selected if it is the only of his type )
+26)element:not(:element)
+27):nth(n) ( the child number n ) ( n can be " even , odd " )
+28):nth-of-type(n) .
+29):nth-last-child(n) (count from end)
+30):nth-last-of-type(n)
+31):root ( to make variables )
+32):checked
+33):empty
+34):disabled
+35):required
+36):focus ( selected input )
+37)::selection ( selected text )
+38)::placeholder (select placeholder inside an element )
+ */
+ p:not(:nth-child(2)){
+     color: blue;
+     border-spacing: 10px;
+ }
+ table {
+     width: 100%;
+ }
+ tbody tr:nth-child(even){
+     background-color: gray;
+     color: white;   
+ }
+ tbody tr:nth-child(odd){
+     background-color: yellow;
+     color: tomato;
+ }
+ td {
+     text-align: center;
+ }
+ thead , tfoot  {
+     background-color: thistle;
+     color: teal;
+ }
+ div:nth-last-of-type(4){
+     color: tomato;
+ }
+ input[type="checkbox"]:checked + label {
+     color: violet;
+     font-size: x-large;
+ }
+ div:empty {
+     background-color: tomato;
+     width: 100px;
+     height: 100px;
+ }
+input[type="text"]:disabled {
+    color: red;
+}
+input:required + span::before {
+    content: "*";
+    color: tomato;
+}
+input:focus {
+    border: solid red 5px;
+}
+div::selection {
+    background-color: black;
+    color: red;
+}
+input:first-of-type::placeholder {
+    color: saddlebrown;
+}
