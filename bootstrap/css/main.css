@@ -1,0 +1,23 @@
+.container .row > div img {
+    display: block;
+    width: 150px;
+    height: 100px;
+    margin: 0px auto 20px ;
+}
+.container .row > div:last-child {
+    text-align: center;
+}
+.container .row > div:last-child {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    background-color: red;
+    color: white;
+    padding: 10px 10px 0px 10px;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+    cursor: pointer;
+}

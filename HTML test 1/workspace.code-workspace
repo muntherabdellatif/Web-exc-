@@ -14,10 +14,25 @@
 		},
 		{
 			"path": "..\\form"
+		},
+		{
+			"path": "..\\..\\WebProject\\HTML-CSS-Template-one"
+		},
+		{
+			"path": "..\\..\\WebProject\\HTML-CSS-Template-two"
+		},
+		{
+			"path": "..\\..\\WebProject\\protfolio-one"
+		},
+		{
+			"path": "..\\..\\WebProject\\login page one"
+		},
+		{
+			"path": "..\\bootstrap"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "CSS test 1"
+		"liveServer.settings.multiRootWorkspaceName": "bootstrap"
 	},
 	"extensions": {
 		"recommendations": [
