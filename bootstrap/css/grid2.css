@@ -1,0 +1,14 @@
+.contant {
+    padding: 20px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    border: white solid 1px;
+}
+.top {
+    margin-bottom: 30px;
+}
+.img-fluid {
+    margin: auto;
+    display: block;
+}

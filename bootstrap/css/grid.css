@@ -1,0 +1,36 @@
+.container {
+    margin-bottom: 50px;
+}
+/* .container .row > div img {
+    display: block;
+    width: 150px;
+    height: 100px;
+    margin: 0px auto 20px ;
+} */
+/* .container .row > div:last-child {
+    text-align: center;
+} */
+.container:first-of-type .row > div:last-child {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+    cursor: pointer;
+}
+.second .row > div:first-of-type img {
+    width: 150px;
+    height: 250px;
+}
+.container .row div p {
+    padding: 20px;
+    text-align: center;
+    background-color: goldenrod;
+    color: white;
+}
