@@ -29,10 +29,13 @@
 		},
 		{
 			"path": "..\\bootstrap"
+		},
+		{
+			"path": "..\\..\\WebProject\\My first web page using bootstrap"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "bootstrap"
+		"liveServer.settings.multiRootWorkspaceName": "My first web page using bootstrap"
 	},
 	"extensions": {
 		"recommendations": [
