@@ -32,10 +32,16 @@
 		},
 		{
 			"path": "..\\..\\WebProject\\My first web page using bootstrap"
+		},
+		{
+			"path": "..\\..\\WebProject\\fusion"
+		},
+		{
+			"path": "..\\js"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "My first web page using bootstrap"
+		"liveServer.settings.multiRootWorkspaceName": "js"
 	},
 	"extensions": {
 		"recommendations": [
