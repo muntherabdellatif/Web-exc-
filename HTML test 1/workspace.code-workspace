@@ -1,51 +1,49 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "..\\Linearity calculator"
-		},
-		{
-			"path": "..\\CSS test 1"
-		},
-		{
-			"path": "..\\Mabdellatif"
-		},
-		{
-			"path": "..\\form"
-		},
-		{
-			"path": "..\\..\\WebProject\\HTML-CSS-Template-one"
-		},
-		{
-			"path": "..\\..\\WebProject\\HTML-CSS-Template-two"
-		},
-		{
-			"path": "..\\..\\WebProject\\protfolio-one"
-		},
-		{
-			"path": "..\\..\\WebProject\\login page one"
-		},
-		{
-			"path": "..\\bootstrap"
-		},
-		{
-			"path": "..\\..\\WebProject\\My first web page using bootstrap"
-		},
-		{
-			"path": "..\\..\\WebProject\\fusion"
-		},
-		{
-			"path": "..\\js"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "js"
-	},
-	"extensions": {
-		"recommendations": [
-			"ms-vscode.cpptools"
-		]
-	}
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\Linearity calculator"
+    },
+    {
+      "path": "..\\CSS test 1"
+    },
+    {
+      "path": "..\\Mabdellatif"
+    },
+    {
+      "path": "..\\form"
+    },
+    {
+      "path": "..\\..\\WebProject\\HTML-CSS-Template-one"
+    },
+    {
+      "path": "..\\..\\WebProject\\HTML-CSS-Template-two"
+    },
+    {
+      "path": "..\\..\\WebProject\\protfolio-one"
+    },
+    {
+      "path": "..\\..\\WebProject\\login page one"
+    },
+    {
+      "path": "..\\bootstrap"
+    },
+    {
+      "path": "..\\..\\WebProject\\My first web page using bootstrap"
+    },
+    {
+      "path": "..\\..\\WebProject\\fusion"
+    },
+    {
+      "path": "..\\js"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "js"
+  },
+  "extensions": {
+    "recommendations": ["ms-vscode.cpptools"]
+  }
 }

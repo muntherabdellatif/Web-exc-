@@ -31,3 +31,47 @@ access the variable before declare ( you can not )
 variables scope drama ( not add to window opject )
 -----------------
 */
+
+let a="monther";
+let b="saleh";
+let c="abdellatif";
+let d=100;
+
+console.log(`${a} ${b} ""
+ ${c} ${d}`);
+let head = "monther card";
+let info = "this is test for monther head"
+ let e =`
+  <div class="main-head">
+    <h2>${head}</h2>
+    <p>${info}</p>
+  </div>
+ `;
+
+ document.write(e);
+//  ------------------------------------------
+let cardTitle="my card 1" , cardDescription="this is card one content" , dateYear = 2021 , dateMonth =9 , dateDay=9 ;
+let card=`
+<div class="main-head">
+<h2>${cardTitle}</h2>
+<p>${cardDescription}</p> 
+<p>${dateYear}/0${dateMonth}/0${dateDay}</p>
+</div>
+`;
+document.write(card.repeat(4));
+// --------------------------------
+console.log(2**5); // 2^5
+// ------------------------------
+console.log (+"100" + 20); // add + befor text to convert it to number 
+console.log(+0x1A); // to convert hex number to binary 
+console.log(-true); // convert true to 1 then to -1 
+// ------------------------------
+let a1=10;
+let b1="20";
+let c1=80;
+console.log(++a1 + +b1++ + +c1++ - +a1++);
+console.log ( `a:${a1} ,b:${b1} ,c:${c1}`)
+console.log(++a1 + -b1 + +c1++ - -a1++ + +a1);
+console.log ( `a:${a1} ,b:${b1} ,c:${c1}`)
+console.log(--c1 + +b1 + --a1 * +b1++ - +b1*a1 + --a1 - +true);
+console.log ( `a:${a1} ,b:${b1} ,c:${c1}`)
