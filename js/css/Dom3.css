@@ -1,0 +1,9 @@
+.productContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 20px;
+  text-align: center;
+}
+.productContainer .product h2 {
+  color: red;
+}

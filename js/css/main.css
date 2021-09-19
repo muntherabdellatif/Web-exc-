@@ -1,4 +1,11 @@
-.active{
-    color: red;
-    font-size: 50px;
+.active {
+  color: red;
+  font-size: 50px;
+}
+.pointer {
+  cursor: pointer;
+}
+.clicked {
+  color: red !important;
+  font-size: 50px;
 }
