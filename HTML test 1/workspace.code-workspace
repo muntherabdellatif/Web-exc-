@@ -38,10 +38,22 @@
     },
     {
       "path": "..\\js"
+    },
+    {
+      "path": "..\\..\\WebProject\\Dicee"
+    },
+    {
+      "path": "..\\..\\WebProject\\Drum-Kit"
+    },
+    {
+      "path": "..\\OOP in JS"
+    },
+    {
+      "path": "..\\..\\WebProject\\Grocery-Store"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "js"
+    "liveServer.settings.multiRootWorkspaceName": "OOP in JS"
   },
   "extensions": {
     "recommendations": ["ms-vscode.cpptools"]
