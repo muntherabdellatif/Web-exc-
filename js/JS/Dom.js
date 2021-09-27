@@ -1,3 +1,4 @@
+// DOM => document object model
 // sellectors
 console.log("%c sellectors" , "color:red;");
 let myDiv =document.getElementById("div");

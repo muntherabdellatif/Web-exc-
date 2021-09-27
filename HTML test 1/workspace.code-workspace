@@ -53,7 +53,7 @@
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "OOP in JS"
+    "liveServer.settings.multiRootWorkspaceName": "js"
   },
   "extensions": {
     "recommendations": ["ms-vscode.cpptools"]
