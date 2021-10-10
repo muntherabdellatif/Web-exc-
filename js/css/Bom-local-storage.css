@@ -1,0 +1,53 @@
+.color-control {
+  width: fit-content;
+  margin: 0px auto 50px;
+  padding: 5px;
+  background-color: #bbb;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.color-control div {
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+}
+.color-control .red {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.color-control .green {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+.color-control .blue {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+.color-control .gray {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+.color-control .red.active {
+  background-color: rgba(255, 0, 0, 1);
+}
+.color-control .green.active {
+  background-color: rgba(0, 255, 0, 1);
+}
+.color-control .blue.active {
+  background-color: rgba(0, 0, 255, 1);
+}
+.color-control .gray.active {
+  background-color: rgba(128, 128, 128, 1);
+}
+.color-area {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  border: solid 1px black;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
